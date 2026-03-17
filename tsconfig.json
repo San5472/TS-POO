@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    /* Estándar de Lenguaje */
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ESNext", "DOM"],
+
+    /* Rigurosidad (Esto es lo que activa los avisos) */
+    "strict": true,                         // Activa todas las comprobaciones estrictas
+    "noImplicitAny": true,                 // No permite dejar tipos como "any" por olvido
+    "strictNullChecks": true,              // Te avisa si algo puede ser "null" o "undefined"
+    "noUnusedLocals": true,                // Error si declaras una variable y no la usas
+    "noUnusedParameters": true,            // Error si una función tiene parámetros que no usas
+    "noImplicitReturns": true,             // Avisa si falta un 'return' en alguna rama de la función
+
+    /* Configuración de Salida */
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "sourceMap": true,                     // Útil para debugging
+
+    /* Interoperabilidad */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true // Evita líos entre mayúsculas y minúsculas en archivos
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
